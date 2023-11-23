@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import locationMark from "/location-mark-icon.png"
 
 export default function Card(props) {
@@ -11,22 +12,26 @@ export default function Card(props) {
         <div id="location" className="col-8"  >
           <p className="mb-2">
             <img className="me-1" src={locationMark} alt="A small location mark icon"></img>
-            {props.item.country} <span><a className="ms-2" href="#">View on Google Maps</a></span>
+            {props.item.country} <span><a className="ms-2" href={`${props.item.googleMap}`} target='_blank' rel="noreferrer">View on Google Maps</a></span>
           </p>
         </div>
 
         <div id="title" className="col-8">
-          <h1 className="fw-bold">Mount Fuji</h1>
+          <h1 className="fw-bold">{props.item.title}</h1>
         </div>
 
         <div id="date" className="col-8">
-          <p className="fw-bold mb-2">12 Jan, 2021 - 24 Jan, 2021</p>
+          <p className="fw-bold mb-2">{props.item.date}</p>
         </div>
 
         <div id="description" className="col-8">
-          <p className="lh-base">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+          <p className="lh-base">{props.item.description}</p>
         </div>
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  item: PropTypes.string.isRequired,
 }
