@@ -39,5 +39,5 @@ export default function Card(props) {
 }
 
 Card.propTypes = {
-  item: PropTypes.string.isRequired,
+  item: PropTypes.object.isRequired,
 }
