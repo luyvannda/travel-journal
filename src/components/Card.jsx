@@ -1,16 +1,17 @@
 import locationMark from "/location-mark-icon.png"
 
-export default function Card() {
+export default function Card(props) {
+
   return (
     <div id="card-component" className="container">
 
-      <img id="card-image" className="col-8 col-md-3 rounded-2 mx-auto d-block" src="https://source.unsplash.com/WLxQvbMyfas" alt="location image"></img>
+      <img id="card-image" className="col-8 col-md-3 rounded-2 mx-auto d-block" src={`${props.item.imgCover}`} alt="location image"></img>
 
       <div id="card-main" className="row mt-4 d-flex justify-content-center">
         <div id="location" className="col-8"  >
           <p className="mb-2">
             <img className="me-1" src={locationMark} alt="A small location mark icon"></img>
-            JAPAN <span><a className="ms-2" href="#">View on Google Maps</a></span>
+            {props.item.country} <span><a className="ms-2" href="#">View on Google Maps</a></span>
           </p>
         </div>
 
