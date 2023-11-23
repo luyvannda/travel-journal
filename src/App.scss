@@ -5,6 +5,42 @@ $main-gray-color: #F5F5F5;
 $main-black-color: #2B283A;
 $main-silver-color: #918E9B;
 
+@mixin media($breakpoint) {
+  @if $breakpoint =="xs" {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint =="sm" {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint =="md" {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint =="lg" {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint =="xl" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Invalid breakpoint: #{$breakpoint}.";
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +54,18 @@ $main-silver-color: #918E9B;
 
 html {
   font-size: 16px;
+
+  @include media("md") {
+    font-size: 17px;
+  }
+
+  @include media("lg") {
+    font-size: 18px;
+  }
+
+  @include media("xl") {
+    font-size: 20px;
+  }
 }
 
 body {
