@@ -35,4 +35,14 @@ body {
 #card-component #card-main #location p span a {
   font-size: 0.64rem;
   color: #918E9B;
+}
+#card-component #card-main #title h1 {
+  font-size: 1.5625rem;
+}
+#card-component #card-main #date p {
+  font-size: 0.64rem;
+}
+#card-component #card-main #description p {
+  font-size: 0.64rem;
+  text-align: justify;
 }/*# sourceMappingURL=App.css.map */

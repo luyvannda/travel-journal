@@ -52,6 +52,25 @@ body {
         }
       }
     }
+
+    #title {
+      h1 {
+        font-size: 1.5625rem;
+      }
+    }
+
+    #date {
+      p {
+        font-size: 0.64rem;
+      }
+    }
+
+    #description {
+      p {
+        font-size: 0.64rem;
+        text-align: justify;
+      }
+    }
   }
 
 }
