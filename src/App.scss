@@ -2,6 +2,8 @@
 
 $main-red-color: #F55A5A;
 $main-gray-color: #F5F5F5;
+$main-black-color: #2B283A;
+$main-silver-color: #918E9B;
 
 * {
   padding: 0;
@@ -20,6 +22,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
+  color: $main-black-color;
 }
 
 #header-component {
@@ -32,6 +35,23 @@ body {
 }
 
 #card-component {
+  margin-top: 2.5rem;
 
-  #card-image {}
+  #card-main {
+
+    #location {
+      p {
+        font-size: 0.64rem;
+
+        span {
+
+          a {
+            font-size: 0.64rem;
+            color: $main-silver-color;
+          }
+        }
+      }
+    }
+  }
+
 }

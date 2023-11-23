@@ -15,6 +15,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
+  color: #2B283A;
 }
 
 #header-component {
@@ -23,4 +24,15 @@ body {
 #header-component h5 {
   font-size: 0.90375rem;
   margin-bottom: 0;
+}
+
+#card-component {
+  margin-top: 2.5rem;
+}
+#card-component #card-main #location p {
+  font-size: 0.64rem;
+}
+#card-component #card-main #location p span a {
+  font-size: 0.64rem;
+  color: #918E9B;
 }/*# sourceMappingURL=App.css.map */
