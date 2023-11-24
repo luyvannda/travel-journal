@@ -7,8 +7,8 @@ export default function Card(props) {
     <div id="card-component" className="container">
 
       <div className="row justify-content-center align-items-center">
-        <div className="col-9 col-md-4 col-lg-4 col-xl-3">
-          <img id="card-image" className="col-12 col-md-12 rounded-2 mx-auto d-block" src={`${props.item.imgCover}`} alt="location image"></img>
+        <div className="col-9 col-md-3 col-lg-3 col-xl-3 d-flex align-items-md-stretch">
+          <img id="card-image" className="col-12 col-md-12 rounded-2" src={`${props.item.imgCover}`} alt="location image"></img>
         </div>
 
         <div className="col-9 col-md-8 col-lg-6 col-xl-5">

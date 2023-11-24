@@ -24,7 +24,7 @@ html {
 }
 @media (min-width: 1200px) {
   html {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -44,6 +44,21 @@ body {
 #card-component {
   margin-top: 2.5rem;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #card-component .row #card-image {
+    height: 10rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #card-component .row #card-image {
+    height: 10rem;
+  }
+}
+@media (min-width: 1200px) {
+  #card-component .row #card-image {
+    height: 11rem;
+  }
+}
 #card-component #card-main #location p {
   font-size: 0.64rem;
 }
@@ -60,4 +75,8 @@ body {
 #card-component #card-main #description p {
   font-size: 0.64rem;
   text-align: justify;
+}
+
+#footer-component p {
+  font-size: small;
 }/*# sourceMappingURL=App.css.map */

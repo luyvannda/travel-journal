@@ -2,6 +2,7 @@ import './App.scss'
 import Header from './components/Header'
 import Card from './components/Card'
 import dataBase from './components/cardData'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <section>
         {cards}
       </section>
+      <Footer />
     </>
   )
 }

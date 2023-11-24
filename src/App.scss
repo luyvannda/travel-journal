@@ -64,7 +64,7 @@ html {
   }
 
   @include media("xl") {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -84,6 +84,22 @@ body {
 
 #card-component {
   margin-top: 2.5rem;
+
+  .row {
+    #card-image {
+      @include media("md") {
+        height: 10rem;
+      }
+
+      @include media("lg") {
+        height: 10rem;
+      }
+
+      @include media("xl") {
+        height: 11rem;
+      }
+    }
+  }
 
   #card-main {
 
@@ -121,4 +137,10 @@ body {
     }
   }
 
+}
+
+#footer-component {
+  p {
+    font-size: small;
+  }
 }
