@@ -88,7 +88,7 @@ body {
   .row {
     #card-image {
       @include media("md") {
-        height: 10rem;
+        height: 9rem;
       }
 
       @include media("lg") {
